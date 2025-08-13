@@ -19,6 +19,6 @@ jobs:
 
       - name: Fetch & merge
         run: |
-          git checkout main
-          git pull gitee main --no-edit
-          git push origin main
+          git checkout master
+          git pull gitee master --no-edit
+          git push origin master
