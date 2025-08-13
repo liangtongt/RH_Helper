@@ -1,0 +1,24 @@
+name: Sync from Gitee
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # 每 6 小时检查一次，可按需改
+  workflow_dispatch:        # 也可手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Add Gitee remote
+        run: git remote add gitee https://gitee.com/zhigan/rh_helper.git
+
+      - name: Fetch & merge
+        run: |
+          git checkout main
+          git pull gitee main --no-edit
+          git push origin main
