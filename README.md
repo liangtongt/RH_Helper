@@ -7,6 +7,9 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/liangtongt/RH_Helper)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+[下载地址](https://github.com/comfyui/rh-helper/releases/latest)
+[兼容的工作流](./wordflow_list.md)
+
 ## ✨ Features
 - ⚡️ 简单：开箱即用
 - 🔧 零配置：双击即可运行
@@ -18,7 +21,6 @@
 - 视频latent解码
 - 支持的工作流推荐
 - 👨‍🚀其他功能欢迎提建议~
-
 
 ## 📚 Describe
 压缩包比较大是因为已经集成好所有环境依赖和模型，双击即可享用。
