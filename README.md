@@ -7,7 +7,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/liangtongt/RH_Helper)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-[下载地址](https://github.com/comfyui/rh-helper/releases)
+[下载地址](https://github.com/liangtongt/RH_Helper/releases)
 [兼容的工作流](./wordflow_list.md)
 
 ## ✨ Features
