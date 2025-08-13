@@ -40,25 +40,25 @@
 ## 界面
 PC端：
 
-<img src="./imgs/微信截图_20250813173950.png" alt="PC" width="800"/>
+<img src="https://gitee.com/zhigan/rh_helper/raw/master/imgs/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250813173950.png" alt="PC" width="800"/>
 
 
 移动端：
 
-<img src="./imgs/微信图片_20250813174057.jpg" alt="phone" width="300"/>
+<img src="https://gitee.com/zhigan/rh_helper/raw/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250813174057.jpg" alt="phone" width="300"/>
 
 
 ## comfyui大神版
 有comfyui运行环境的大神可直接使用下述流程解码就行。
 
-![workflow](./imgs/decode_workflow.png)
+![workflow](https://gitee.com/zhigan/rh_helper/raw/master/imgs/decode_workflow.png)
 1、下载图片直接拖入comfyui即可加载流程
 
 2、需解码latent文件放入ComfyUI/input文件夹下
 
 ## 流程创作者兼容
 仅需在最后一步保存图片或视频时添加蓝框部分即可
-![workflow](./imgs/encode_workflow.png)
+![workflow](https://gitee.com/zhigan/rh_helper/raw/master/imgs/encode_workflow.png)
 可将兼容的流程链接通过issues提交，作者将会添加到兼容列表中。
 
 ## 免责说明
