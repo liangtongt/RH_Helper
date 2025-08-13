@@ -15,7 +15,7 @@
 
 ## 流程创作者兼容
 仅需在最后一步保存图片或视频时添加蓝框部分即可
-![workflow](https://gitee.com/zhigan/rh_helper/raw/master/imgs/encode_workflow.png)
+![workflow](./imgs/encode_workflow.png)
 可将兼容的流程链接通过issues提交，作者将会添加到兼容列表中。
 
 ## 免责说明
