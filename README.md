@@ -9,6 +9,7 @@
 
 [下载地址](https://github.com/liangtongt/RH_Helper/releases)
 [兼容的工作流](./wordflow_list.md)
+[使用教程](https://www.youtube.com/watch?v=fux1POGj6YI)
 
 ## ✨ Features
 - ⚡️ 简单：开箱即用
