@@ -3,11 +3,11 @@
 > 不定时更新中。。。
 
 ## ✨ 文生图
-#### 自定义模型及lora的FLUX生图
-  
-- [国内](https://www.bilibili.com/video/BV1zK4y1p77y/)
+| 名称 | 国内 | 海外 |
+|-------|-------|-------|
+| Qwen Image 破限制版 | [链接](https://www.runninghub.cn/ai-detail/1955818622205792257/?inviteCode=3ka31r8m) | [链接](https://www.runninghub.ai/ai-detail/1955818622205792257/?inviteCode=rh-v1068) |
+| 待添加 | 链接 | 链接 |
 
-- [海外](https://www.bilibili.com/video/BV1zK4y1p77y/)
 
 
 
