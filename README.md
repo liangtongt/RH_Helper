@@ -40,6 +40,18 @@
 2、双击run.bat运行
 ```
 
+## 目录结构
+```
+├── internal     
+├── workflows    
+├── comfyui.exe
+├── ffprobe.exe         # web中预览视频必须
+├── RH_Helper.exe
+├── run.bat             # 👈双击启动   
+├── test_photo.latent   # 图片latent测试文件
+└── test_video.latent   # 视频latent测试文件
+```
+
 ## 界面
 PC端：
 
