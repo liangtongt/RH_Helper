@@ -8,7 +8,11 @@
 | Qwen Image 破限制版 | [链接](https://www.runninghub.cn/ai-detail/1955818622205792257/?inviteCode=3ka31r8m) | [链接](https://www.runninghub.ai/ai-detail/1955818622205792257/?inviteCode=rh-v1068) |
 | 待添加 | 链接 | 链接 |
 
-
+## ✨ 图生视频
+| 名称 | 国内 | 海外 |
+|-------|-------|-------|
+| WAN2.1 图生视频 自选lora 破限制版 | [链接](https://www.runninghub.cn/ai-detail/1956968437277757442/?inviteCode=3ka31r8m) | [链接](https://www.runninghub.ai/ai-detail/1956968437277757442/?inviteCode=rh-v1068) |
+| 待添加 | 链接 | 链接 |
 
 
 
