@@ -11,6 +11,14 @@
 [兼容的工作流](./wordflow_list.md)
 [使用教程](https://www.youtube.com/watch?v=fux1POGj6YI)
 
+## 🎉 更新
+国内下载链接：https://pan.quark.cn/s/5ddf1e16242e 提取码：LT7Q
+
+2025.08.25
+- 发布cuda版本，比之前的cpu版本快，2G显存也能解码
+- 模型下载管理
+
+
 ## ✨ Features
 - ⚡️ 简单：开箱即用
 - 🔧 零配置：双击即可运行
@@ -20,6 +28,7 @@
 ## 🚀 functions 
 - 图片latent解码
 - 视频latent解码
+- 图片去水印
 - 支持的工作流推荐
 - 👨‍🚀其他功能欢迎提建议~
 
