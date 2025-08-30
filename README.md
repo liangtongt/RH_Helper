@@ -15,7 +15,7 @@
 国内下载链接：https://pan.quark.cn/s/5ddf1e16242e 提取码：LT7Q
 
 2025.08.30 v0.2.6
-- 和T8辩论3天后最终屈服latent解码添加vae选择框
+- 和T8辩论3天后最终屈服latent解码添加vae选择框，可自行下载vae模型到_internal\models\vae文件夹下,点击刷新列表即可选择vae模型。
 
 2025.08.28 v0.2.5
 - 添加快速去水印和质量去水印功能
