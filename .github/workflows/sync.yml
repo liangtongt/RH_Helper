@@ -1,0 +1,76 @@
+name: Sync from Gitee (Public)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC时间0点(北京时间8点)
+
+jobs:
+  sync-repo:
+    runs-on: ubuntu-latest
+    steps:
+      # 步骤1: 检出当前GitHub仓库
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+          ref: ${{ github.ref }}  # 明确检出当前分支
+
+      # 步骤2: 备份当前Action文件
+      - name: Backup GitHub Actions
+        run: |
+          mkdir -p /tmp/backup_workflows
+          cp -a .github/workflows/* /tmp/backup_workflows/
+          
+      # 步骤3: 配置Git身份
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+
+      # 步骤4: 添加Gitee远程仓库
+      - name: Add Gitee remote
+        run: |
+          git remote add gitee https://gitee.com/zhigan/rh_helper.git
+          git fetch gitee --tags
+          
+      # 步骤5: 同步所有分支（保留Action文件）
+      - name: Sync branches
+        run: |
+          # 获取当前分支名称
+          CURRENT_BRANCH=$(git symbolic-ref --short HEAD)
+          echo "Current branch: $CURRENT_BRANCH"
+          
+          # 重置到Gitee仓库的对应分支（强制更新工作目录）
+          git reset --hard gitee/$CURRENT_BRANCH
+          
+          # 恢复备份的Action文件
+          mkdir -p .github/workflows
+          cp -a /tmp/backup_workflows/* .github/workflows/
+          
+          # 添加所有更改（包括恢复的Action文件）
+          git add -A
+          
+          # 提交恢复的Action文件（如果有变化）
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "chore: restore GitHub Actions after sync"
+          fi
+          
+          # 强制推送到当前分支
+          git push --force origin HEAD:$CURRENT_BRANCH
+          
+      # 步骤6: 同步所有分支的引用（而不仅仅是当前分支）
+      - name: Sync all branches
+        run: |
+          # 同步所有分支引用
+          git push origin --all --force
+          
+          # 同步所有标签引用
+          git push origin --tags --force
+          
+      # 步骤7: 清理工作区
+      - name: Clean up
+        run: |
+          git remote remove gitee
+          rm -rf /tmp/backup_workflows
