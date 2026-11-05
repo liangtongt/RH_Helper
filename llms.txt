@@ -1,0 +1,12 @@
+# RH Helper
+
+> 一个开箱即用的Windows桌面辅助工具，用于对RH图片和视频的latent进行解码，并支持图片去水印等附加功能。
+
+支持Windows，可通过双击运行压缩包内的程序，无需配置环境。主要功能包括图片和视频latent解码、图片去水印、去马赛克和模型下载管理；移动端（android/ios）需通过PC启动服务访问。解压包已集成环境依赖和模型，也可在ComfyUI中使用兼容工作流。
+
+## Docs
+
+- [RH Helper](https://raw.githubusercontent.com/liangtongt/RH_Helper/master/README.md): RH Helper 的下载地址、功能介绍、快速开始、界面说明、comfyui 解码流程及免责声明.
+- [更新](https://github.com/liangtongt/RH_Helper/blob/master/README.md#-更新): 国内下载链接与各版本更新日志，包括去水印、去马赛克、cuda 版本及 vae 选择等功能变动.
+- [Describe](https://github.com/liangtongt/RH_Helper/blob/master/README.md#-describe): 压缩包集成说明、CPU 解码速度参考、默认 VAE 模型选择及自定义模型放置位置.
+- [支持的工作流](https://raw.githubusercontent.com/liangtongt/RH_Helper/master/wordflow_list.md): 兼容的文生图、图生视频工作流列表、流程创作者兼容方法及通过 issues 提交流程链接的方式.
